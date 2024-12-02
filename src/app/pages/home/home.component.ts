@@ -1,6 +1,6 @@
+import { SlicePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { SlicePipe } from '@angular/common';
 import { ApiService } from '../../api.service';
 
 @Component({
@@ -11,7 +11,8 @@ import { ApiService } from '../../api.service';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  constructor(private api:ApiService){}
+
+  constructor(private api:ApiService){ }
   products:any=[]
 
   ngOnInit(){
